@@ -5,7 +5,7 @@ namespace SpecFlowBDD.Pages
 {
     public class SauceLoginPage
     {
-        //private readonly IWebDriver driver;
+        private readonly IWebDriver driver;
 
         public SauceLoginPage(IWebDriver driver)
         {
