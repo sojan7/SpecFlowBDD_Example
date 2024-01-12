@@ -14,7 +14,7 @@ namespace SpecFlowBDD.Drivers
         /// <param name="browserName">Chrome or Firefox</param>
         /// <returns>An instance of IWebDriver</returns>
         /// <exception cref="ArgumentException">Wrong browser selection, No implementation for browsers other than chrome and firefox</exception>
-        public IWebDriver GenerateBrowserDriverBasedOnABrowserName(string browserName)
+        public IWebDriver GetWebDriver(string browserName = "chrome")
         {
             Driver = browserName.ToLower() switch
             {

@@ -17,7 +17,7 @@ namespace SpecFlowBDD.StepDefinitions
         public SauceDemo(ScenarioContext scenarioContext)
         {
             this.scenarioContext = scenarioContext;
-            Driver = GenerateBrowserDriverBasedOnABrowserName("chrome");
+            Driver = GetWebDriver("chrome");
             sauceLoginPage = new(Driver);
             sauceHomePage = new(Driver);
             cartPage = new(Driver);
